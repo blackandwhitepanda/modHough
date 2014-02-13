@@ -75,7 +75,7 @@ int main( int argc, char** argv )
 
    // for each pixel
   for( size_t y = 0; y < thresh_grad.rows - 1; y++ ) {
-	  for( size_t x = 0; x < thresh_grad.rows - 1; x++ ) {
+	  for( size_t x = 0; x < thresh_grad.cols - 1; x++ ) {
 
 		  if(thresh_grad.at<uint>(x,y) > 0) {
 
